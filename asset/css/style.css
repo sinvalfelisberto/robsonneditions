@@ -1,62 +1,136 @@
 /* CSS HEX */
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Merriweather:wght@300&family=Poppins:wght@200;500;900&family=Roboto:ital,wght@0,500;0,700;0,900;1,400&family=UnifrakturMaguntia&display=swap');
+
+
 :root {
     --davys-gray: #4d4b50ff;
     --byzantine-blue: #0c4ce2ff;
     --off-red-rgb: #f30505ff;
     --turkey-red: #a50405ff;
     --platinum: #eaeaeaff;
+    --gold-metallic: #d4af37;
+    --white: #fff;
+
+    --text-color01: rgb(77, 75, 80)   ;
+    --text-color02: rgb(105, 103, 108);
+    --text-color03: rgb(133, 131, 136);
+    --text-color04: rgb(161, 159, 164);
+    --text-color05: rgb(189, 187, 192);
+    --text-color06: rgb(217, 215, 220);
 }
 
-body   {
-    background-color: var(--davys-gray);
+html {
+    scroll-behavior: smooth;
+    transition: 1s;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.conteudo {
+    background-image: linear-gradient(rgb(77, 75, 80), rgb(133, 131, 136));
+    margin-top: 72px;
+}
+
+
+.navbar .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28212, 175, 55, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e")
+}
+
+.navbar .navbar-toggler {
+    border-color: var(--gold-metallic);
+    color: rgba(1, 1, 1, 0);
+}
+
+.textoNavegacao {
+    
     color: var(--platinum);
 }
 
-.navegacao {
-    background-color: var(--byzantine-blue);
+.textEdition {
+    font-family: Merriweather;
+    font-size: 16px;
+    color: var(--gold-metallic);
+
 }
 
-/* CSS HSL */
-/*
---davys-gray: hsla(264, 3%, 30%, 1);
---byzantine-blue: hsla(222, 90%, 47%, 1);
---off-red-rgb: hsla(0, 96%, 49%, 1);
---turkey-red: hsla(360, 95%, 33%, 1);
---platinum: hsla(0, 0%, 92%, 1);
+.letraE{
+    font-size: 20px;
+}
 
-/* SCSS HEX 
-$davys-gray: #4d4b50ff;
-$byzantine-blue: #0c4ce2ff;
-$off-red-rgb: #f30505ff;
-$turkey-red: #a50405ff;
-$platinum: #eaeaeaff;
-/* 
-/* SCSS HSL */
-/*
-$davys-gray: hsla(264, 3%, 30%, 1);
-$byzantine-blue: hsla(222, 90%, 47%, 1);
-$off-red-rgb: hsla(0, 96%, 49%, 1);
-$turkey-red: hsla(360, 95%, 33%, 1);
-$platinum: hsla(0, 0%, 92%, 1);
+.textoFonte {
+    font-family: UnifrakturMaguntia;
+    font-size: 28px;
+    color: var(--gold-metallic)
+}
 
-/* SCSS RGB */
-/*
-$davys-gray: rgba(77, 75, 80, 1);
-$byzantine-blue: rgba(12, 76, 226, 1);
-$off-red-rgb: rgba(243, 5, 5, 1);
-$turkey-red: rgba(165, 4, 5, 1);
-$platinum: rgba(234, 234, 234, 1);
-/*
-/* SCSS Gradient */
-/*
-$gradient-top: linear-gradient(0deg, #4d4b50ff, #0c4ce2ff, #f30505ff, #a50405ff, #eaeaeaff);
-$gradient-right: linear-gradient(90deg, #4d4b50ff, #0c4ce2ff, #f30505ff, #a50405ff, #eaeaeaff);
-$gradient-bottom: linear-gradient(180deg, #4d4b50ff, #0c4ce2ff, #f30505ff, #a50405ff, #eaeaeaff);
-$gradient-left: linear-gradient(270deg, #4d4b50ff, #0c4ce2ff, #f30505ff, #a50405ff, #eaeaeaff);
-$gradient-top-right: linear-gradient(45deg, #4d4b50ff, #0c4ce2ff, #f30505ff, #a50405ff, #eaeaeaff);
-$gradient-bottom-right: linear-gradient(135deg, #4d4b50ff, #0c4ce2ff, #f30505ff, #a50405ff, #eaeaeaff);
-$gradient-top-left: linear-gradient(225deg, #4d4b50ff, #0c4ce2ff, #f30505ff, #a50405ff, #eaeaeaff);
-$gradient-bottom-left: linear-gradient(315deg, #4d4b50ff, #0c4ce2ff, #f30505ff, #a50405ff, #eaeaeaff);
-$gradient-radial: radial-gradient(#4d4b50ff, #0c4ce2ff, #f30505ff, #a50405ff, #eaeaeaff); 
-*/
+.logo-marca {
+    width: 45px;
+}
 
+.navbar {
+    background-color: rgba(0, 0, 0, 0.7) !important;
+    box-shadow: none !important;
+}
+
+.nav-link {
+    color: var(--platinum);    
+}
+
+
+.nav-link:hover {
+    color: var(--gold-metallic);
+    /* border-bottom: #d4af37 solid 1px; */
+
+}
+
+ .show .nav-link:hover{
+    border: none;
+}
+
+#topo{
+    margin-top: 70px;
+}
+
+.hero-content {
+    background-image: url("../img/hero1.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: var(--platinum);
+    transition: 0.8s ease-in-out;
+}
+
+
+
+
+.rodape {
+    position: absolute;
+    /* padding-top: 35px; */
+    background-image: linear-gradient(rgb(77, 75, 80), rgb(0, 0, 0));
+    height: 150px;
+    width: 100%;
+    /* padding: 10px;    */
+    bottom: 0; 
+}
+
+.scripta {
+    font-family: Allura;
+    color: var(--gold-metallic);
+    font-size: 32px;
+}
+
+
+@media (max-width: 768px) {
+    .navbar {
+      background-color: var(--davys-gray) !important; /* Define uma cor de fundo sólida para dispositivos móveis */
+      transition: none !important; /* Remove a transição de cor de fundo para dispositivos móveis */
+    }
+    .rodape .scripta {
+        font-size: 28px;
+    }
+  }
