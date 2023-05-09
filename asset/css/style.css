@@ -24,6 +24,9 @@ html {
     transition: 1s;
 }
 
+body {
+    background-color: var(--text-color05);
+}
 
 * {
     margin: 0;
@@ -92,15 +95,20 @@ html {
     border: none;
 }
 
-#topo{
-    margin-top: 70px;
+#portfolio{
+    margin-top: 72px;
+    background-image: linear-gradient(rgb(161, 159, 164), rgb(105, 103, 108));
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: var(--platinum);
+    font-family: Merriweather;
 }
 
 .hero-content {
-    background-image: url("../img/hero1.jpeg");
+    background-image: linear-gradient(rgb(77, 75, 80), rgb(161, 159, 164));
     background-repeat: no-repeat;
     background-size: cover;
-
     color: var(--platinum);
     transition: 0.8s ease-in-out;
 }
@@ -109,19 +117,20 @@ html {
 
 
 .rodape {
-    position: absolute;
-    /* padding-top: 35px; */
     background-image: linear-gradient(rgb(77, 75, 80), rgb(0, 0, 0));
-    height: 150px;
-    width: 100%;
-    /* padding: 10px;    */
-    bottom: 0; 
+    height: 200px;
+    color: var(--platinum);
 }
 
 .scripta {
     font-family: Allura;
     color: var(--gold-metallic);
     font-size: 32px;
+}
+
+.testeContainer {
+    background-color: #0c4ce2ff;
+    height: 100vh;
 }
 
 
